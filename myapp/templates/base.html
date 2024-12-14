@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+    <pagename>
+        {% block pagename %}
+        <h1></h1>
+        {% endblock %}
+    </pagename>
+
+    <menu>
+         {% block menu %}
+         <ul>
+             <h4><p><a href="http://127.0.0.1:8000/"> Главная</a></p>
+             <p><a href="http://127.0.0.1:8000/platform/news">Новости</a></p>
+         </ul>
+        {% endblock %}
+    </menu>
+    <content>
+        {% block content %}
+        <p></p>
+        {% endblock %}
+    </content>
+</body>
+</html>
